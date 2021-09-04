@@ -3,13 +3,17 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    background-color: var(--color-white);
 
-    padding: 1rem 3rem;
-    position: relative;
+    padding: 0.5rem 2rem;
+    // position: sticky;
+    // top: 0;
+    // position: relative;
+    // z-index: 10;
 }
 
 .logo {
-    width: 5rem;
+    width: 3.5rem;
 }
 
 .navbar__modal {
@@ -19,16 +23,18 @@
 .navbar__modal.active {
     text-align: center;
     line-height: 3;
-    font-size: 2rem;
-    padding: 5rem;
+    font-size: 1.5rem;
     position: absolute;
-    top: 6rem;
+    top: 5.5rem;
     right: 0;
     width: 100%;
     background-color: var(--color-white);
+    padding: 3rem 0;
 
     display: flex;
     flex-direction: column;
+
+    z-index: 5;
 }
 
 .navbar__link {
@@ -38,14 +44,14 @@
 
 .navbar__link:hover {
     text-decoration: underline;
-  }
+}
 
 
 .toggle-box {
     color: black;
     background-color: transparent;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
 
     display: flex;
     justify-content: center;
@@ -57,7 +63,7 @@
 .menu-bar {
     position: relative;
     width: 100%;
-    height: 4px;
+    height: 3px;
     background-color: var(--color-very-dark-blue);
 
     transition: transform 200ms ease;
@@ -77,26 +83,66 @@
 }
 
 .menu-bar::before {
-    top: -8px;
+    top: -6px;
 }
 
 .menu-bar::after {
-    top: 8px;
+    top: 6px;
 }
 
 
 .toggle-box.open .menu-bar {
     transform: rotate(45deg);
     transition: transform 200ms 0.12s ease;
-  }
+}
   
-  .toggle-box.open .menu-bar::before {
+.toggle-box.open .menu-bar::before {
     top: 0;
     transition: top 200ms ease;
-  }
+}
   
-  .toggle-box.open .menu-bar::after {
+.toggle-box.open .menu-bar::after {
     top: 0;
     transform: rotate(-90deg);
     transition: top 200ms ease, transform 200ms ease 0.12s;
-  }
+}
+
+// .sticky {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+// }
+
+@media only screen and (min-width: 900px) {
+
+    .navbar {
+        padding: 1rem 3rem;
+    }
+
+    .logo {
+        width: 5rem;
+    }
+    .navbar__modal.active {
+        font-size: 2rem;
+        padding: 5rem;
+        top: 5.5rem;
+        width: 100%;
+    }
+
+    .toggle-box {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .menu-bar {
+        height: 4px;
+    }
+
+    .menu-bar::before {
+        top: -8px;
+    }
+    
+    .menu-bar::after {
+        top: 8px;
+    }
+}
