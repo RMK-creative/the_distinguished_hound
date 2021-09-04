@@ -20,5 +20,42 @@ blockquote {
     width: 100%;
 }
 
-// Section paddings & margins
+.section__heading {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    font-family: var(--font-copy);
+    font-weight: 500;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
+    border: 2px solid var(--color-very-dark-blue);
+    padding: 0.5rem 1rem;
+    background: transparent;
+
+    @media only screen and (min-width: 900px) {
+        font-size: 0.75rem;
+        padding: 1rem 2rem;
+    }
+}
+
+.btn:hover {
+    background-color: var(--color-very-dark-blue);
+    color: var(--color-white);
+
+    transition: transform 200ms ease;
+}
+
+// @media only screen and (min-width: 900px) {
+//     .btn {
+//         font-size: 0.75rem;
+//         padding: 1rem 2rem;
+//     }
+    
+// }
 
