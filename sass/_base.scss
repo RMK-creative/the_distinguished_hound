@@ -20,10 +20,19 @@ blockquote {
     width: 100%;
 }
 
+.section {
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .section__heading {
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     text-transform: uppercase;
+    margin-bottom: 3rem;
 }
 
 .btn {
