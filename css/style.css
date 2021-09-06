@@ -73,6 +73,7 @@ select {
 :root {
   --color-white: #FFFFFF;
   --color-very-dark-blue: #202040;
+  --coor-box-shadow: 3px 4px 15px rgb(228, 228, 228);
   --font-heading: 'Flamenco', cursive;
   --font-copy: 'Josefin Sans', sans-serif; }
 
@@ -94,10 +95,18 @@ blockquote {
 .content__wrapper {
   width: 100%; }
 
+.section {
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .section__heading {
   font-size: 1.5rem;
   letter-spacing: 0.2rem;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 3rem; }
 
 .btn {
   display: inline-block;
@@ -138,7 +147,7 @@ blockquote {
   line-height: 3;
   font-size: 1.5rem;
   position: absolute;
-  top: 5.5rem;
+  top: 3.2rem;
   right: 0;
   width: 100%;
   background-color: var(--color-white);
@@ -250,7 +259,7 @@ blockquote {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   font-weight: 400; }
 
 @media only screen and (min-width: 900px) {
@@ -268,3 +277,54 @@ blockquote {
   .hero__sub-heading {
     font-size: 1.875rem;
     margin-bottom: 4rem; } }
+
+.testimonials__wrapper {
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.testimonial__card {
+  font-family: var(--font-copy);
+  border-radius: 0.5rem;
+  box-shadow: var(--coor-box-shadow);
+  min-width: 22rem;
+  max-width: 22rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  margin: 5rem 1rem;
+  background-image: url(/assets/paws.png);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  background-position: top 1vh right 1vw; }
+
+.testimonial__img {
+  width: 6.25rem;
+  border-radius: 50%;
+  margin-top: -5.2rem; }
+
+.testimonial__dog-name {
+  font-family: var(--font-copy);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0 0; }
+
+.testimonial__dog-breed {
+  margin-top: 0.2rem;
+  font-size: 0.875rem;
+  color: #949494;
+  margin-bottom: 2rem;
+  text-transform: lowercase;
+  letter-spacing: 0.05rem; }
+
+.testimonial__quote {
+  font-weight: 300;
+  margin-bottom: 1rem; }
+
+.testimonial__owner {
+  font-weight: 300;
+  justify-self: flex-end; }
