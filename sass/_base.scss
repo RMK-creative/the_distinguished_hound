@@ -44,6 +44,16 @@ blockquote {
     }
 }
 
+.section__sub-heading {
+    font-family: var(--font-copy);
+    font-size: 1rem;
+    font-weight: 400;
+    @media only screen and (min-width: 900px) {
+        font-size: 1.3rem;
+        padding: 0 15rem;
+    }
+}
+
 .btn {
     display: inline-block;
     font-family: var(--font-copy);
@@ -51,6 +61,7 @@ blockquote {
     font-size: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    max-width: 10rem;
 
     border: 2px solid var(--color-very-dark-blue);
     padding: 0.5rem 1rem;
