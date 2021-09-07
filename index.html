@@ -62,15 +62,19 @@
                     </div>
             </header>   
 
-            <section class="services section">
+            <section class="services section" id="services">
                 <div class="services__wrapper">
                     <h3 class="section__heading">
                         Services
                     </h3>
                     <h4 class="section__sub-heading">From a super quick clip to a full pamper session, we'll take care of your best friend! Price list below.</h4>
 
-                    <p class="services__terms">If you have any questions regarding what is best for your pet or for more information regarding services available from The Distinguished Hound, please contact Sarah on <phone>0411 889 071</phone> or <a class="services__contact-link" href="#contact">head to our contact page</a> and send an enquiry via email.</p>
+                    <p class="services__terms">If you have any questions regarding what is best for your pet or for more information regarding services available from The Distinguished Hound, please contact Sarah on <phone>0411 889 071</phone> or <a class="contact-link" href="#contact">head to our contact page</a> and send an enquiry via email.</p>
                     <p class="services__terms">Please let us know if your dog has any special needs such as sensitive skin or a recent injury/illness prior to your appointment.</p>
+
+                    <p class="services__card--sizes">
+                        dog sizes: small under 10kg | medium 10kg to 20kg | large over 20kg
+                    </p>
 
                     <div class="services__inner--container">
                         <div class="services__img--container">
@@ -123,9 +127,7 @@
                                     <li>All sizes from $99+</li>
                                 </ul>
                             </div>
-                            <p class="services__card--sizes">
-                                small under 10kg | medium 10kg to 20kg | large over 20kg
-                            </p>
+                            
 
                         </div>
                     </div><!--services__inner--container-->
@@ -257,7 +259,8 @@
                         <div class="location__text">
                             <p class="location__address">388 New Canterbury Road, Dulwich Hill, Sydney</p>
                             <p class="location__parking">Parking: 
-                                There is ample free public parking available at the rear of the salon, access via Seaview St - walk along one of the many alley ways to access New Canterbury Road. There are also limited 1 hour parking spots available directly in front of our salon until 3pm weekdays. </p>
+                                There is ample free public parking available at the rear of the salon, access via Seaview St - walk along one of the many alley ways to access New Canterbury Road.</p>
+                                <p class="location__parking">There are also limited 1 hour parking spots available directly in front of our salon until 3pm weekdays. </p>
                         </div>
                     </div>
                     <div class="location__map-wrap">
@@ -269,17 +272,55 @@
                 </div><!--location__container-->
             </section>
 
-            <footer class="faq" id="faq">
+            <section class="faq section" id="faq">
                 <h3 class="section__heading">FAQ</h3> 
                 <div class="faq__container">
-                    <ul>
-                        <li><a href="faq.html#bookings">Bookings</a></li>
-                        <li><a href="faq.html#salon">The Salon</a></li>
-                        <li><a href="faq.html#grooming">Grooming</a></li>
-                        <li><a href="faq.html#terms">Terms of Service</a></li>
-                        <li><a href="faq.html">View All FAQ</a></li>
-                    </ul>
+                    <details class="faq__block">
+                        <summary class="faq__heading">Bookings</summary>
+                            <h6 class="faq__question">How do I make a booking?</h6>
+                            <p class="faq__answer">You can make a booking by sending us a message using our <a href="#contact" class="contact-link">contact form</a>, by calling during business hours on <a href="tel:0411889071" class="call-link">0411 889 071</a>, or in person <a href="#location" class="contact-link">at the salon.</a> </p>
+                            <h6 class="faq__question">How do I cancel a booking?</h6>
+                            <p class="faq__answer">We ask that you inform us at least 24hrs before your scheduled booking by phone <a href="tel:0411889071" class="call-link">0411 889 071</a> or message via our <a href="#contact" class="contact-link">contact form</a>.</p>
+                            <h6 class="faq__question">What payment options are available?</h6>
+                            <p class="faq__answer">EFTPOS and Cash payments are available.</p>
+                            <h6 class="faq__question">Why aren't the exact prices listed?</h6>
+                            <p class="faq__answer">Our prices are a guide only and are subject to the coat condition and temperament of your dog. Dogs that are matted or heavily knotted will need a shorter clip (in consultation with the owner) to prevent any unnecessary trauma or irritation to skin.</p>
+                    </details>  
+
+                    <details class="faq__block">
+                        <summary class="faq__heading">The Salon</summary>
+                            <h6 class="faq__question">Is parking available?</h6>
+                            <p class="faq__answer">Yes! There are limited 1 hour parking spots available directly in front of our salon until 3pm weekdays. Further to this, there is ample free public parking available at the rear of the salon, access via Seaview Street - walk along one of the many alley ways to access New Canterbury Road. Check out the map <a href="#location" class="contact-link"> here</a></p>
+                            <h6 class="faq__question">Do you sell giftcards?</h6>
+                            <p class="faq__answer">Yes! Gift certificates are available for amounts nominated by you. Please call <a href="tel:0411889071" class="call-link">0411 889 071</a> for further information.</p>
+                            <h6 class="faq__question">I would like to leave a review. Where can I do this?</h6>
+                            <p class="faq__answer">We would love to hear your feedback! Please head over to our facebook or instagram accounts to let us know your thoughts.</p>
+                    </details> 
+
+                    <details class="faq__block">
+                        <summary class="faq__heading">Grooming</summary>
+                            <h6 class="faq__question">How long will it take you to groom my dog?</h6>
+                            <p class="faq__answer"> This varies greatly depending on a number of factors including:
+                                What service you require,
+                                the type of coat your dog has;
+                                the condition of your dog's coat,
+                                the temperament of your dog, and
+                                if your dog has any special care needs.</p>
+                            <h6 class="faq__question">Why should I get a professional to groom my dog?</h6>
+                            <p class="faq__answer">Grooming, hygiene and general pet care are important for your pet just as it is for you.  Regular grooming promotes healthier skin and coat for your pet which leads to greater well being - free from discomfort. Professional groomer's have access to the best products and equipment which keeps your pet's coat and skin in good condition and smelling great for longer. A professional groomer is familiar with a dog's anatomy and is often the first person to identify any abnormalities such as skin irritations, bumps, lumps and lesions on your pet which may lead to early detection of illnesses which may have otherwise gone undetected.</p>
+                            <h6 class="faq__question"> How often should my dog be groomed?</h6>
+                            <p class="faq__answer">Your dog's grooming schedule is individual to them. Factors including the length of their coat, the style of cut you are after, the weather, how active they are and also how much they smell along with your personal preference all determine how frequently your pet should be groomed. Generally speaking, dogs that shed frequently should be groomed more regularly (monthly) to prevent a build up of hair - and mess in your house! For those breeds that have a longer coat, we suggest to book an appointment for a wash/tidy up every 3 weeks and a full groom every 6 weeks. We encourage owners to brush their dogs on a regular basis in between grooming appointments to prevent knotting.</p>
+                    </details>
+
+                    <details class="faq__block">
+                        <summary class="faq__heading">Terms of service</summary>
+                            <p class="faq__answer">The Distinguished Hound reserves the right to refuse or cease any service with animals who are aggressive and pose a threat to our safety.</p>
+                            
+                    </details>
                 </div>
+            </section>
+
+            <footer>
                 <p>© The Distinguished Hound</p>
             </footer>
             
