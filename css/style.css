@@ -117,6 +117,15 @@ blockquote {
       letter-spacing: 0.3rem;
       margin: 7rem auto; } }
 
+.section__sub-heading {
+  font-family: var(--font-copy);
+  font-size: 1rem;
+  font-weight: 400; }
+  @media only screen and (min-width: 900px) {
+    .section__sub-heading {
+      font-size: 1.3rem;
+      padding: 0 15rem; } }
+
 .btn {
   display: inline-block;
   font-family: var(--font-copy);
@@ -124,6 +133,7 @@ blockquote {
   font-size: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  max-width: 10rem;
   border: 2px solid var(--color-very-dark-blue);
   padding: 0.5rem 1rem;
   background: transparent; }
@@ -348,6 +358,7 @@ blockquote {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  align-items: center;
   font-family: var(--font-copy);
   letter-spacing: 0.1rem; }
 
@@ -355,30 +366,46 @@ blockquote {
   margin-top: 4rem;
   display: flex;
   flex-direction: column; }
+  @media only screen and (min-width: 900px) {
+    .services__inner--container {
+      margin-top: 7rem;
+      flex-direction: row;
+      align-content: space-between; } }
 
 .services__card--container {
   max-width: 40rem; }
+  @media only screen and (min-width: 900px) {
+    .services__card--container {
+      margin-left: 5rem; } }
 
 .services__heading {
   font-size: 1.125rem; }
-
-.services__sub-heading {
-  font-family: var(--font-copy);
-  font-size: 1rem;
-  font-weight: 400; }
 
 .services__terms {
   margin-top: 3rem;
   font-size: 1rem;
   font-weight: 300; }
+  @media only screen and (min-width: 900px) {
+    .services__terms {
+      padding: 0 13rem;
+      font-size: 1rem; } }
 
 .services__card {
   padding: 1.5rem; }
+  @media only screen and (min-width: 900px) {
+    .services__card {
+      text-align: left;
+      margin: 0 0 1.3rem;
+      box-shadow: none;
+      padding: 0 1.5rem; } }
 
 .services__card--title {
   font-size: 1.25rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem; }
+  @media only screen and (min-width: 900px) {
+    .services__card--title {
+      margin: 0; } }
 
 .services__card--info,
 .services__card--prices {
@@ -386,36 +413,157 @@ blockquote {
 
 .services__card--info {
   margin: 2rem auto; }
+  @media only screen and (min-width: 900px) {
+    .services__card--info {
+      margin: 0.5rem 0 0; } }
 
 .services__card--prices {
   font-size: 1rem;
   text-transform: lowercase; }
+  @media only screen and (min-width: 900px) {
+    .services__card--prices {
+      display: flex;
+      flex-direction: row; } }
 
 .services__card--sizes {
-  margin-top: 2rem;
+  margin: 2rem 0;
   font-size: 0.6rem; }
+  @media only screen and (min-width: 900px) {
+    .services__card--sizes {
+      margin: 3rem 0 4rem; } }
 
 @media only screen and (min-width: 900px) {
-  .services__inner--container {
-    margin-top: 7rem;
-    flex-direction: row;
-    align-content: space-between; }
-  .services__card {
-    text-align: left;
-    margin: 0 0 1.3rem;
-    box-shadow: none;
-    padding: 0 1.5rem; }
-  .services__card--container {
-    margin-left: 5rem; }
-  .services__card--title {
-    margin: 0; }
-  .services__card--info {
-    margin: 0.5rem 0 0; }
-  .services__card--prices {
-    display: flex;
-    flex-direction: row; }
   .services__card--prices li {
-    margin-right: 1rem; }
-  .services__card--sizes {
-    margin-top: 3rem;
-    font-size: 1rem; } }
+    margin-right: 1rem; } }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 30px;
+  font-family: var(--font-copy); }
+
+.contact__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.contact__form--info {
+  font-family: var(--font-copy);
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 3rem 0;
+  max-width: 475px; }
+  @media only screen and (min-width: 900px) {
+    .contact__form--info {
+      margin: 0 3rem 5rem; } }
+
+.contact__img {
+  width: 18rem;
+  height: 18rem;
+  margin: 0; }
+  @media only screen and (min-width: 900px) {
+    .contact__img {
+      width: 29rem;
+      height: 29rem; } }
+
+.contact__form {
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  border: none;
+  width: 500px;
+  padding: 1.25rem 0;
+  max-width: calc(100vw - 40px);
+  position: relative; }
+  @media only screen and (min-width: 900px) {
+    .contact__form {
+      margin-left: 4rem; } }
+
+.contact__required {
+  font-size: 0.875rem; }
+
+fieldset {
+  border: none; }
+
+input {
+  width: 100%;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  transition: all 0.3s;
+  border-bottom: 2px solid #bebed2;
+  margin-bottom: 1rem; }
+
+input:focus {
+  border-bottom: 2px solid #78788c; }
+
+.form__btn {
+  float: right;
+  border: 1px solid var(--color-very-dark-blue);
+  padding: 1rem 1.5rem;
+  background: transparent;
+  margin: 8px 0 0;
+  background: 0;
+  color: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s; }
+
+.form__btn:hover {
+  background: var(--color-very-dark-blue);
+  color: var(--color-white); }
+
+.message-input {
+  border: 2px solid #bebed2;
+  height: 10rem;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+.location__container {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%; }
+  @media only screen and (min-width: 900px) {
+    .location__container {
+      flex-direction: row;
+      margin: 0; } }
+
+.location__text {
+  font-family: var(--font-copy);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  max-width: 30ch; }
+  @media only screen and (min-width: 900px) {
+    .location__text {
+      font-size: 1.5rem; } }
+
+.location__address {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  text-align: center; }
+  @media only screen and (min-width: 900px) {
+    .location__address {
+      text-align: left; } }
+
+.location__parking {
+  font-size: 0.875rem; }
+
+.location__map {
+  height: 15rem;
+  width: 100%;
+  margin-top: 3rem; }
+  @media only screen and (min-width: 900px) {
+    .location__map {
+      margin-left: 7rem;
+      margin-top: 0; } }
