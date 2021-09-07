@@ -125,7 +125,8 @@ blockquote {
   font-family: var(--font-copy);
   font-size: 1rem;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+  letter-spacing: 0.1rem; }
   @media only screen and (min-width: 900px) {
     .section__sub-heading {
       font-size: 1.3rem;
@@ -377,7 +378,6 @@ blockquote {
   text-align: center;
   align-items: center;
   font-family: var(--font-copy);
-  letter-spacing: 0.1rem;
   padding: 0 1.5rem; }
   @media only screen and (min-width: 900px) {
     .services__wrapper {
@@ -462,7 +462,6 @@ blockquote {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px 30px;
   font-family: var(--font-copy); }
 
 .contact__container {
@@ -591,16 +590,23 @@ input:focus {
       margin-top: 0; } }
 
 .faq {
-  max-width: 50vw;
+  padding: 2rem;
   margin: 0 auto;
   align-items: center; }
+  @media only screen and (min-width: 900px) {
+    .faq {
+      max-width: 50vw;
+      padding: 0; } }
 
 .faq__container {
   width: 100%;
   font-family: var(--font-copy);
   color: var(--color-very-dark-blue);
   text-align: center;
-  margin-bottom: 10rem; }
+  margin-bottom: 5rem; }
+  @media only screen and (min-width: 900px) {
+    .faq__container {
+      margin-bottom: 10rem; } }
 
 .faq__block {
   margin: 0 0 1.5rem; }
@@ -621,17 +627,23 @@ input:focus {
   font-weight: 300; }
 
 .faq__question {
-  font-size: 1.5rem;
-  margin: 0;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
   text-align: left; }
+  @media only screen and (min-width: 900px) {
+    .faq__question {
+      font-size: 1.5rem; } }
 
 .faq__answer {
-  font-size: 1rem;
+  font-size: 0.875rem;
   margin-bottom: 3rem;
   text-align: left; }
 
 .faq__block[open] .faq__heading {
   animation: sweep .5s ease-in-out; }
+
+.terms {
+  margin-top: 2rem; }
 
 footer {
   text-align: center;
