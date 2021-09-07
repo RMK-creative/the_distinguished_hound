@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
 
     font-family: var(--font-copy);
     letter-spacing: 0.1rem;
@@ -14,36 +15,65 @@
     margin-top: 4rem;
     display: flex;
     flex-direction: column;
+
+    @media only screen and (min-width: 900px) {
+            margin-top: 7rem;
+            flex-direction: row;
+            align-content: space-between;
+    }
 }
 
 .services__card--container {
     max-width: 40rem;
+
+    @media only screen and (min-width: 900px) {
+            margin-left: 5rem;
+    }
 }
 
 .services__heading {
     font-size: 1.125rem;
 }
 
-.services__sub-heading {
-    font-family: var(--font-copy);
-    font-size: 1rem;
-    font-weight: 400;
-}
+// .services__sub-heading {
+//     font-family: var(--font-copy);
+//     font-size: 1rem;
+//     font-weight: 400;
+//     @media only screen and (min-width: 900px) {
+//         font-size: 1.3rem;
+//         padding: 0 15rem;
+//     }
+// }
 
 .services__terms {
     margin-top: 3rem;
     font-size: 1rem;
     font-weight: 300;
+    @media only screen and (min-width: 900px) {
+        padding: 0 13rem;
+        font-size: 1rem;
+    }
 }
 
 .services__card {
     padding: 1.5rem;
+
+    @media only screen and (min-width: 900px) {
+            text-align: left;
+            margin: 0 0 1.3rem;
+            box-shadow: none;
+            padding: 0 1.5rem;
+    }
 }
 
 .services__card--title {
     font-size: 1.25rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
+
+    @media only screen and (min-width: 900px){
+            margin: 0;
+    }
 }
 
 .services__card--info,
@@ -53,55 +83,46 @@
 
 .services__card--info {
     margin: 2rem auto;
+
+    @media only screen and (min-width: 900px){
+            margin: 0.5rem 0 0 ;
+    }
 }
 
 .services__card--prices {
     font-size: 1rem;
     text-transform: lowercase;
+
+    @media only screen and (min-width: 900px) {
+            display: flex;
+            flex-direction: row;
+    }
 }
 
 .services__card--sizes {
-    margin-top: 2rem;
+    margin: 2rem 0;
     font-size: 0.6rem;
+
+    @media only screen and (min-width: 900px) {
+            margin: 3rem 0 4rem
+    }
 }
 
 @media only screen and (min-width: 900px) {
-    .services__inner--container {
-        margin-top: 7rem;
-        flex-direction: row;
-        align-content: space-between;
-    }
-
-    .services__card {
-        text-align: left;
-        margin: 0 0 1.3rem;
-        box-shadow: none;
-        padding: 0 1.5rem;
-    }
-
-    .services__card--container {
-        margin-left: 5rem;
-    }
-
-    .services__card--title {
-        margin: 0;
-    }
-
-    .services__card--info {
-        margin: 0.5rem 0 0 ;
-    }
-
-    .services__card--prices {
-        display: flex;
-        flex-direction: row;
-    }
-
     .services__card--prices li {
         margin-right: 1rem;
     }
-
-    .services__card--sizes {
-        margin-top: 3rem;
-        font-size: 1rem;
-    }
 }
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
