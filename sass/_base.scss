@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--color-very-dark-blue);
 }
 
 h1,
@@ -30,6 +31,9 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media only screen and (min-width: 900px) {
+        padding: 3rem 1rem;
+    }
 }
 
 .section__heading {
@@ -48,9 +52,10 @@ blockquote {
     font-family: var(--font-copy);
     font-size: 1rem;
     font-weight: 400;
+    text-align: center;
     @media only screen and (min-width: 900px) {
         font-size: 1.3rem;
-        padding: 0 15rem;
+        padding: 0 25rem;
     }
 }
 
@@ -80,11 +85,13 @@ blockquote {
     transition: transform 200ms ease;
 }
 
-// @media only screen and (min-width: 900px) {
-//     .btn {
-//         font-size: 0.75rem;
-//         padding: 1rem 2rem;
-//     }
-    
-// }
+.call-link,
+.contact-link {
+    text-decoration: underline;
+}
+
+@keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
 
