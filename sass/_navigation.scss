@@ -43,12 +43,12 @@
 }
 
 .navbar__link:hover {
-    text-decoration: underline;
+    border-bottom: 3px solid var(--color-very-dark-blue);
 }
 
 
 .toggle-box {
-    color: black;
+    color: var(--color-very-dark-blue);
     background-color: transparent;
     width: 30px;
     height: 30px;
