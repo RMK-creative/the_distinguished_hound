@@ -35,6 +35,9 @@
                         <a  class="navbar__link"href="#contact">Contact</a>
                     </li>
                     <li class="navbar__item">
+                        <a  class="navbar__link"href="#location">Location</a>
+                    </li>
+                    <li class="navbar__item">
                         <a class="navbar__link" href="#faq">FAQ</a>
                     </li>
                  </ul>
@@ -64,9 +67,9 @@
                     <h3 class="section__heading">
                         Services
                     </h3>
-                    <h4 class="services__sub-heading">From a super quick clip to a full pamper session, we'll take care of your best friend! More info below.</h4>
+                    <h4 class="section__sub-heading">From a super quick clip to a full pamper session, we'll take care of your best friend! Price list below.</h4>
 
-                    <p class="services__terms">If you have any questions regarding what is best for your pet or for more information regarding services available from The Distinguished Hound, please contact Sarah on 0411 889 071 or <a class="services__contact-link" href="#contact">head to our contact page</a> and send an enquiry via email.</p>
+                    <p class="services__terms">If you have any questions regarding what is best for your pet or for more information regarding services available from The Distinguished Hound, please contact Sarah on <phone>0411 889 071</phone> or <a class="services__contact-link" href="#contact">head to our contact page</a> and send an enquiry via email.</p>
                     <p class="services__terms">Please let us know if your dog has any special needs such as sensitive skin or a recent injury/illness prior to your appointment.</p>
 
                     <div class="services__inner--container">
@@ -126,7 +129,9 @@
 
                         </div>
                     </div><!--services__inner--container-->
-                    
+                    <a class="cta__btn btn" href="#contact">
+                        Book now
+                    </a>
                 </div><!--services__wrapper-->
             </section>
 
@@ -202,7 +207,6 @@
                         <cite class="testimonial__owner">
                             - Kate</cite>
                     </div> 
-                
                 </div>
             </section>
 
@@ -211,60 +215,58 @@
                 <h3 class="section__heading">
                     Contact us
                 </h3> 
-                <p class="contact_form-p">
+                <h4 class="section__sub-heading">
                     Please use the form below to contact us with any questions, or to make a booking request. 
-                </p>
+                </h4>
                 
-                <div class="contact__grid-container">
+                <div class="contact__container">
+                    <img id="contact__img" class="contact__img" src="assets/bow-tie.jpeg" alt="dog wearing bowtie" />
                     <form action="" method="post" class="contact__form">
                         <fieldset>
-                            <legend class="contact__form-heading">
-                                <h3>
-                                    Contact Us ..
+                            <legend>
+                                <h3 class="sr-only">
+                                 Contact form
                                 </h3>
                             </legend>
                                 <label for="name">your name
-                                    <span class="contact__required field">(required)<input></input></span>
+                                    <span class="contact__required field">(required)<input type="text"></input></span>
                                 </label>
                                 <label for="email">your email
-                                    <span class="contact__required field">(required)<input></input></span>
+                                    <span class="contact__required field">(required)<input type="text"></input></span>
                                 </label>
-                                <label class="field" for="phone-number">your phone<span class="contact__required field">(optional)<input></input></span>
+                                <label class="field" for="phone-number">your phone<span class="contact__required field">(optional)<input type="text"></input></span>
                                 </label>
                                 <label for="message">your message to us 
-                                    <span class="contact__required field">(required)<input></input></span>
+                                    <span class="contact__required field">(required)<input type="text" class="message-input"></input></span>
                                 </label>
                                 
-                            <button>
+                            <button class="form__btn btn">
                                 send
                             </button>
                         </fieldset>
                     </form>
                 </div>
+            </section>
 
-                    <div class="contact__dropin">
-                        <h3 id="contact__header">.. or Drop In</h3>
-                            <div class="contact__dropin-text" id="contact__text">
-                                <p>Come and see us in the salon:</p>
-                                <p>388 New Canterbury Road, <br> Dulwich Hill, Sydney</p>
-
-                                <div class="contact__dropin-address">
-                                    <iframe class="contact__dropin-map" title="google map location of salon" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3311.475946157181!2d151.14174011136163!3d-33.903148137925186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1b0d122c371%3A0xa2db3661ea953949!2sThe%20Distinguished%20Hound!5e0!3m2!1sen!2sde!4v1616330012664!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                                    
-                                    <img id="contact__img" class="contact__img" src="assets/bowtie.jpg" alt="dog wearing bowtie">
-                                </div>
-                            </div>
-
-                            <div class="contact__dropin-socials">
-                                <ul>
-                                    <li><i class="fab fa-instagram"></i></li>
-                                    <li><i class="fab fa-facebook-f"></i></li>
-                                </ul>
-                            </div>
-
-                        <div class="contact__dropin-img">
+            <section class="location section">
+                <h3 class="section__heading" id="location">
+                    Our location
+                </h3> 
+                <div class="location__container">
+                    <div class="location__text-wrap">
+                        <div class="location__text">
+                            <p class="location__address">388 New Canterbury Road, Dulwich Hill, Sydney</p>
+                            <p class="location__parking">Parking: 
+                                There is ample free public parking available at the rear of the salon, access via Seaview St - walk along one of the many alley ways to access New Canterbury Road. There are also limited 1 hour parking spots available directly in front of our salon until 3pm weekdays. </p>
                         </div>
                     </div>
+                    <div class="location__map-wrap">
+                        <div>
+                            <iframe class="location__map" title="google map location of salon" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3311.475946157181!2d151.14174011136163!3d-33.903148137925186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1b0d122c371%3A0xa2db3661ea953949!2sThe%20Distinguished%20Hound!5e0!3m2!1sen!2sde!4v1616330012664!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                
+                        </div><!--location__map-->
+                    </div><!--location__map-wrap-->
+                </div><!--location__container-->
             </section>
 
             <footer class="faq" id="faq">
