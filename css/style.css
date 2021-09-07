@@ -101,7 +101,7 @@ blockquote {
   max-width: 1500px; }
 
 .section {
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -126,7 +126,8 @@ blockquote {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  letter-spacing: 0.1rem; }
+  letter-spacing: 0.1rem;
+  padding: 0 1.5rem; }
   @media only screen and (min-width: 900px) {
     .section__sub-heading {
       font-size: 1.3rem;
@@ -547,7 +548,7 @@ input:focus {
   word-break: break-all; }
 
 .location__container {
-  margin-top: 5rem;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -557,7 +558,7 @@ input:focus {
   @media only screen and (min-width: 900px) {
     .location__container {
       flex-direction: row;
-      margin: 0; } }
+      margin: 5rem; } }
 
 .location__text {
   font-family: var(--font-copy);
@@ -648,6 +649,7 @@ input:focus {
 footer {
   text-align: center;
   padding: 1rem;
+  font-weight: 300;
   font-size: 0.875rem;
   font-family: var(--font-copy);
   color: var(--color-very-dark-blue); }
