@@ -1,0 +1,115 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 30px;
+
+    font-family: var(--font-copy);
+  }
+
+.contact__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+  
+.contact__form--info {
+    font-family: var(--font-copy);
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 3rem 0;
+    max-width: 475px;
+    @media only screen and (min-width: 900px) {
+        margin: 0 3rem 5rem;
+    }
+}
+
+.contact__img {
+    width: 18rem;
+    height: 18rem;
+    margin: 0;
+    @media only screen and (min-width: 900px) {
+        width: 29rem;
+        height: 29rem;
+    }
+}
+  
+.contact__form {    
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    border: none;
+    width: 500px;
+    padding: 1.25rem 0;
+    max-width: calc(100vw - 40px);
+    position: relative;
+
+    @media only screen and (min-width: 900px) {
+        margin-left: 4rem;
+    }
+}
+
+.contact__required {
+    font-size: 0.875rem;
+}
+
+fieldset {
+    border: none;
+}
+  
+input {
+    width: 100%;
+    background: none;
+    outline: none;
+    resize: none;
+    border: 0;
+    transition: all 0.3s;
+    border-bottom: 2px solid #bebed2;
+    margin-bottom: 1rem;
+}
+  
+input:focus {
+    border-bottom: 2px solid #78788c;
+}
+  
+.form__btn {
+    float: right;
+
+    border: 1px solid var(--color-very-dark-blue);
+    padding: 1rem 1.5rem;
+    background: transparent;
+    margin: 8px 0 0;
+    background: 0;
+    color: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    transition: all 0.3s;
+}
+  
+.form__btn:hover {
+    background: var(--color-very-dark-blue);
+    color: var(--color-white);
+}
+  
+.message-input {
+    border: 2px solid #bebed2;
+    height: 10rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+// span {
+//     margin: 0 5px;
+//     font-size: 1.4rem;
+//     color: #4d4d4d;
+// }
+  
+
+
+  
