@@ -290,10 +290,20 @@ blockquote {
   justify-content: flex-start;
   align-items: center;
   padding: 1rem; }
+  @media only screen and (min-width: 900px) {
+    .hero {
+      padding: 5rem;
+      background-position: 60% 50%;
+      justify-content: flex-end; } }
 
 .hero__content {
   text-align: left;
   color: var(--color-very-dark-blue); }
+  @media only screen and (min-width: 900px) {
+    .hero__content {
+      text-align: right;
+      margin-bottom: 5rem;
+      padding-left: 5rem; } }
 
 .hero__heading {
   font-size: 1.5rem;
@@ -301,6 +311,10 @@ blockquote {
   text-transform: uppercase;
   font-family: var(--font-heading);
   max-width: 19ch; }
+  @media only screen and (min-width: 900px) {
+    .hero__heading {
+      font-size: 3rem;
+      letter-spacing: 0.4rem; } }
 
 .hero__sub-heading {
   font-size: 1rem;
@@ -308,22 +322,10 @@ blockquote {
   margin-top: 1rem;
   margin-bottom: 3rem;
   font-weight: 400; }
-
-@media only screen and (min-width: 900px) {
-  .hero {
-    padding: 5rem;
-    background-position: 60% 50%;
-    justify-content: flex-end; }
-  .hero__content {
-    text-align: right;
-    margin-bottom: 5rem;
-    padding-left: 5rem; }
-  .hero__heading {
-    font-size: 3rem;
-    letter-spacing: 0.4rem; }
-  .hero__sub-heading {
-    font-size: 1.875rem;
-    margin-bottom: 4rem; } }
+  @media only screen and (min-width: 900px) {
+    .hero__sub-heading {
+      font-size: 1.875rem;
+      margin-bottom: 4rem; } }
 
 .testimonials__wrapper {
   min-width: 100%;
