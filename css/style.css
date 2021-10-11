@@ -119,7 +119,7 @@ blockquote {
     .section__heading {
       font-size: 2rem;
       letter-spacing: 0.3rem;
-      margin: 7rem auto; } }
+      margin: 4rem auto; } }
 
 .section__sub-heading {
   font-family: var(--font-copy);
@@ -326,6 +326,7 @@ blockquote {
     margin-bottom: 4rem; } }
 
 .testimonials__wrapper {
+  margin-top: 3rem;
   min-width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -567,8 +568,7 @@ input:focus {
   width: 100%; }
   @media only screen and (min-width: 900px) {
     .location__container {
-      flex-direction: row;
-      margin: 5rem; } }
+      flex-direction: row; } }
 
 .location__text {
   font-family: var(--font-copy);
