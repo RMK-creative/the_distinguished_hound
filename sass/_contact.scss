@@ -48,6 +48,7 @@
   padding: 1.25rem 0;
   max-width: calc(100vw - 40px);
   position: relative;
+  text-transform: uppercase;
 
   @media only screen and (min-width: 900px) {
     margin-left: 4rem;
@@ -56,6 +57,7 @@
 
 .contact__required {
   font-size: 0.7rem;
+  text-transform: lowercase;
 }
 
 fieldset {
@@ -71,6 +73,7 @@ input {
   transition: all 0.3s;
   border-bottom: 2px solid #bebed2;
   margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
 input:focus {
@@ -100,7 +103,8 @@ input:focus {
 .message-input {
   border: 2px solid #bebed2;
   width: 100%;
-  height: 10rem;
+  height: 9rem;
   word-wrap: break-word;
   word-break: break-all;
+  font-size: 1rem;
 }
