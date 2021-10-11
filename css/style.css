@@ -326,11 +326,13 @@ blockquote {
     margin-bottom: 4rem; } }
 
 .testimonials__wrapper {
-  margin-top: 3rem;
   min-width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
+  @media only screen and (min-width: 900px) {
+    .testimonials__wrapper {
+      margin-top: 3rem; } }
 
 .testimonial__card {
   font-family: var(--font-copy);
@@ -498,11 +500,12 @@ blockquote {
 .contact__img {
   width: 18rem;
   height: 18rem;
-  margin: 0; }
+  margin-bottom: 3rem; }
   @media only screen and (min-width: 900px) {
     .contact__img {
       width: 29rem;
-      height: 29rem; } }
+      height: 29rem;
+      margin: 0; } }
 
 .contact__form {
   font-weight: 300;
@@ -581,7 +584,7 @@ input:focus {
       font-size: 1.5rem; } }
 
 .location__address {
-  margin: 2rem 0;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
   text-align: center; }
   @media only screen and (min-width: 900px) {
@@ -589,7 +592,7 @@ input:focus {
       text-align: left; } }
 
 .location__parking {
-  font-size: 0.875rem; }
+  font-size: 1rem; }
 
 .location__map {
   height: 15rem;
