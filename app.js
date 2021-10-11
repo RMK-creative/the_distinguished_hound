@@ -8,10 +8,12 @@ hamburger.addEventListener("click", () => {
   // prevent scroll when menu is open
   if (modal.classList.contains("active")) {
     document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
   }
 });
 
-// close menu when clicked anywhere
+// close menu when item clicked
 modal.addEventListener(
   "click",
   () => {
