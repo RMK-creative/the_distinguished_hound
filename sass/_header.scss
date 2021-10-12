@@ -35,7 +35,8 @@
   font-size: 1.5rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  font-family: var(--font-heading);
+  font-family: var(--font-copy);
+  font-weight: 300;
   max-width: 19ch;
 
   @media only screen and (min-width: 900px) {
@@ -49,7 +50,8 @@
   letter-spacing: 0.1rem;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: var(--font-copy);
 
   @media only screen and (min-width: 900px) {
     font-size: 1.875rem;
