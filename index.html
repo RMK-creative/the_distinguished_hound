@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/8f34ba545f.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -20,25 +20,28 @@
                     <img class="logo" src="assets/logo_208x239.png" alt="The distinguished hound logo"/>
                 </a>
             </div>
-            <nav class="navbar__modal-wrapper">
+            <nav class="navbar__modal-wrapper" role=navigation>
                 <ul class="navbar__modal">
                     <li class="navbar__item">
-                        <a class="navbar__link" href="/">Home</a>
+                        <a class="navbar__link" href="/">home</a>
                     </li>
                     <li class="navbar__item">
-                        <a  class="navbar__link"href="#services">Services</a>
+                        <a  class="navbar__link"href="#services">services</a>
                     </li>
                     <li class="navbar__item">
                         <a  class="navbar__link"href="#testimonials">reviews</a>
                     </li>
                     <li class="navbar__item">
-                        <a  class="navbar__link"href="#contact">Contact</a>
+                        <a  class="navbar__link"href="#gallery">gallery</a>
                     </li>
                     <li class="navbar__item">
-                        <a  class="navbar__link"href="#location">Location</a>
+                        <a  class="navbar__link"href="#contact">contact</a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="#faq">FAQ</a>
+                        <a  class="navbar__link"href="#location">location</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a class="navbar__link" href="#faq">faq</a>
                     </li>
                  </ul>
                  <a class="toggle-box">
@@ -67,7 +70,7 @@
                     <h3 class="section__heading">
                         Services
                     </h3>
-                    <h4 class="section__sub-heading">From a super quick clip to a full pamper session, we'll take care of your best friend! Price list below.</h4>
+                    <h4 class="section__sub-heading services__sub-heading">From a super quick clip to a full pamper session, we'll take care of your best friend! Price list below.</h4>
 
                     <p class="services__terms">If you have any questions regarding what is best for your pet or for more information regarding services available from The Distinguished Hound, please contact Sarah on 0411 889 071 or head to our <a class="contact-link" href="#contact">contact page</a> and send an enquiry via email.</p>
                     <p class="services__terms">Please let us know if your dog has any special needs such as sensitive skin or a recent injury/illness prior to your appointment.</p>
@@ -83,6 +86,7 @@
 
                         <div class="services__card--container">
                             <div class="services__card">
+                                <p class="card__icon">✂</p>
                                 <h5 class="services__card--title">Wash Only</h5>
                                 <p class="services__card--info">
                                     Deep cleansing warm hydrobath, blow dry and brush.
@@ -95,9 +99,10 @@
                             </div>
 
                             <div class="services__card">
+                                <p class="card__icon">✂</p>
                                 <h5 class="services__card--title">Tidy up</h5>
                                 <p class="services__card--info">
-                                    Deep cleansing warm hydrobath, blow dry, brush, hygeine area, face, eyes, ears and nails
+                                    Deep cleansing warm hydrobath, blow dry, brush, hygeine area, face, ears and nails
                                 </p> 
                                 <ul class="services__card--prices">
                                     <li>Small $66+</li>
@@ -107,6 +112,7 @@
                             </div>
 
                             <div class="services__card">
+                                <p class="card__icon">✂</p>
                                 <h5 class="services__card--title">The works</h5>
                                 <p class="services__card--info">
                                     Deep cleansing hydrobath, blow dry, brush, clip/style clip, hygeine area and nails.
@@ -119,6 +125,7 @@
                             </div>
 
                             <div class="services__card">
+                                <p class="card__icon">✂</p>
                                 <h5 class="services__card--title">Groom out</h5>
                                 <p class="services__card--info">
                                     Deshedding procedure ideal for double coats. Deep cleansing warm hydrobath, blow drying for excess undercoat removal, brush, hygeine area, face, eyes, ears and nails.
@@ -212,6 +219,44 @@
                 </div>
             </section>
 
+            <section class="gallery section" id="gallery">
+                <div class="container">
+                    <h3 class="section__heading ">Gallery</h3>
+                    <!-- <figure>
+                        <img src="/assets/muffy_gus_billy.jpeg" id="mainImg" alt="">
+                    </figure> -->
+                    <div class="gallery-set">
+                        <ul class="gallery__images-wrapper">
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-1_thumb.jpg" alt="" data-original="tdh-1_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-2_thumb.jpg" alt="" data-original="tdh-2_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-3_thumb.jpg" alt="" data-original="tdh-3_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-4_thumb.jpg" alt="" data-original="tdh-4_full"></li>
+
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-5_thumb.jpg" alt="" data-original="tdh-5_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-6_thumb.jpg" alt="" data-original="tdh-6_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-7_thumb.jpg" alt="" data-original="tdh-7_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-8_thumb.jpg" alt="" data-original="tdh-8_full"></li>
+
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-9_thumb.jpg" alt="" data-original="tdh-9_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-10_thumb.jpg" alt="" data-original="tdh-10_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-11_thumb.jpg" alt="" data-original="tdh-11_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-12_thumb.jpg" alt="" data-original="tdh-12_full"></li>
+
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-13_thumb.jpg" alt="" data-original="tdh-13_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-14_thumb.jpg" alt="" data-original="tdh-14_full"></li>
+                            <!-- <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-15_thumb.jpg" alt="" data-original="tdh-15_full"></li>
+                            <li class="img__container"><img loading="lazy" class="gallery__img" src="/assets/thumb/tdh-16_thumb.jpg" alt="" data-original="tdh-16_full"></li> -->
+
+                        </ul>
+                        <div class="gallery__modal">
+                            <img src="/assets/dog_thinkingLG.jpg" alt="" class="gallery__modal-full-img" >
+                            <i class="fas fa-chevron-right" class="arrow-right"></i>
+                            <i class="fas fa-chevron-left" class="arrow-left"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             
             <section class="contact section" id="contact">
                 <h3 class="section__heading">
@@ -232,7 +277,7 @@
                                     <span class="contact__required field">(required)<input type="text" id="name"></input></span>
                                 </label>
                                 <label for="email" >your email
-                                    <span class="contact__required field">(required)<input type="email" id="email"></input></span>
+                                    <span class="contact__required field">(required)<input type="email" id="email" class="input-email"></input></span>
                                 </label>
                                 <label class="field" for="phone-number" >your phone <span class="contact__required field">(optional)<input type="number" id="phone-number"></input></span>
                                 </label>
@@ -253,14 +298,14 @@
                     Our location
                 </h3> 
                 <div class="location__container">
-                    <div class="location__text-wrap">
+                    <!-- <div class="location__text-wrap">
                         <div class="location__text">
                             <p class="location__address">388 New Canterbury Road, Dulwich Hill, Sydney</p>
                             <p class="location__parking">Parking: 
                                 There is ample free public parking available at the rear of the salon, access via Seaview St - walk along one of the many alley ways to access New Canterbury Road.</p>
                                 <p class="location__parking">There are also limited 1 hour parking spots available directly in front of our salon until 3pm weekdays. </p>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="location__map-wrap">
                         <div>
                             <iframe class="location__map" title="google map location of salon" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3311.475946157181!2d151.14174011136163!3d-33.903148137925186!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12b1b0d122c371%3A0xa2db3661ea953949!2sThe%20Distinguished%20Hound!5e0!3m2!1sen!2sde!4v1616330012664!5m2!1sen!2sde" style="border:0;" allowfullscreen=""></iframe>
