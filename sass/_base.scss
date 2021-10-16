@@ -1,9 +1,9 @@
 body {
-    background-color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--color-very-dark-blue);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-very-dark-blue);
 }
 
 h1,
@@ -13,87 +13,94 @@ h4,
 h5,
 h6,
 .navbar__item {
-    font-family: var(--font-heading)
+  font-family: var(--font-copy);
+  font-weight: 300;
+  color: var(--color-very-dark-blue);
 }
 
 blockquote {
-    font-family: var(--font-copy);
+  font-family: var(--font-copy);
 }
 
 .content__wrapper {
-    width: 100%;
-    max-width: 1500px;
+  width: 100%;
+  max-width: 1500px;
 }
 
 .section {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media only screen and (min-width: 900px) {
     padding: 3rem 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media only screen and (min-width: 900px) {
-        padding: 3rem 1rem;
-    }
+  }
 }
 
 .section__heading {
-    font-size: 1.5rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-    @media only screen and (min-width: 900px) {
-        font-size: 2rem;
-        letter-spacing: 0.3rem;
-        margin: 4rem auto;
-    }
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+  @media only screen and (min-width: 900px) {
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+    margin: 4rem auto;
+  }
 }
 
 .section__sub-heading {
-    font-family: var(--font-copy);
-    font-size: 1rem;
-    font-weight: 300;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    padding: 0 1.5rem;
-    @media only screen and (min-width: 900px) {
-        font-size: 1.3rem;
-        padding: 0 25rem;
-    }
+  font-family: var(--font-copy);
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding: 0 1.5rem;
+  @media only screen and (min-width: 900px) {
+    font-size: 1.3rem;
+    padding: 0;
+    max-width: 50ch;
+  }
 }
 
 .btn {
-    display: inline-block;
-    font-family: var(--font-copy);
-    font-weight: 500;
-    font-size: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    max-width: 10rem;
+  display: inline-block;
+  font-family: var(--font-copy);
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  max-width: 10rem;
 
-    border: 2px solid var(--color-very-dark-blue);
-    padding: 0.5rem 1rem;
-    background: transparent;
+  border: 2px solid var(--color-very-dark-blue);
+  padding: 0.5rem 1rem;
+  background: transparent;
 
-    @media only screen and (min-width: 900px) {
-        font-size: 0.75rem;
-        padding: 1rem 2rem;
-    }
+  @media only screen and (min-width: 900px) {
+    font-size: 0.75rem;
+    padding: 1rem 2rem;
+  }
 }
 
 .btn:hover {
-    background-color: var(--color-very-dark-blue);
-    color: var(--color-white);
+  background-color: var(--color-very-dark-blue);
+  color: var(--color-white);
 
-    transition: transform 200ms ease;
+  transition: transform 200ms ease;
 }
 
 .call-link,
 .contact-link {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @keyframes sweep {
-    0%    {opacity: 0; margin-top: -10px}
-    100%  {opacity: 1; margin-top: 0px}
+  0% {
+    opacity: 0;
+    margin-top: -10px;
   }
-
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
