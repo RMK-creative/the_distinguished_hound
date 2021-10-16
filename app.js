@@ -26,3 +26,53 @@ modal.addEventListener(
   },
   true
 );
+
+// form validation
+
+// const errorMsg = document.querySelector(".contact__form-error");
+const input = document.querySelector(".input-email");
+const submit = document.querySelector(".form__btn");
+
+const validateForm = (e) => {
+  e.preventDefault();
+  const emailRegExp =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  errorMsg.classList.remove("active");
+
+  // if (!emailRegExp.test(input.value)) {
+  //   errorMsg.classList.add("active");
+  // } else {
+  //   input.value = "";
+  // }
+};
+
+function clearInput() {
+  input.value = "";
+  errorMsg.classList.remove("active");
+}
+
+input.addEventListener("click", clearInput);
+submit.addEventListener("click", validateForm);
+
+// Gallery
+
+const galleryModal = document.querySelector(".gallery__modal");
+const thumbs = document.querySelectorAll(".gallery-set img");
+const original = document.querySelector(".gallery__modal-full-img");
+
+thumbs.forEach((thumbs) => {
+  thumbs.addEventListener("click", () => {
+    galleryModal.classList.add("open");
+    original.classList.add("open");
+    const originalSrc = thumbs.getAttribute("data-original");
+    original.src = `/assets/full/${originalSrc}.jpg`;
+  });
+});
+
+galleryModal.addEventListener("click", (e) => {
+  console.log(`${e.target} was clicked`);
+  if (e.target.classList.contains("gallery__modal")) {
+    galleryModal.classList.remove("open");
+    original.classList.remove("open");
+  }
+});
