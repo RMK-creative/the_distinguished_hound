@@ -1,140 +1,138 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background-color: var(--color-white);
-    padding: 0.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 0.5rem 2rem;
 
-    @media only screen and (min-width: 900px) {
-        padding: 1rem 3rem;
-    }
+  @media only screen and (min-width: 900px) {
+    padding: 1rem 3rem;
+  }
 }
 
 .logo {
-    width: 3.5rem;
+  width: 3.5rem;
 
-    @media only screen and (min-width: 900px) {
-        width: 5rem;
-    }
+  @media only screen and (min-width: 900px) {
+    width: 5rem;
+  }
 }
 
 .navbar__modal {
-    display: none;
+  display: none;
 }
 
 .navbar__modal.active {
-    text-align: center;
-    line-height: 3;
-    font-size: 1.5rem;
-    position: absolute;
-    top: 3.2rem;
-    right: 0;
+  text-align: center;
+  line-height: 3;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 3.2rem;
+  right: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 3rem 0;
+
+  display: flex;
+  flex-direction: column;
+
+  z-index: 5;
+
+  @media only screen and (min-width: 900px) {
+    font-size: 2rem;
+    padding: 1rem;
+    top: 5rem;
     width: 100%;
-    background-color: var(--color-white);
-    padding: 3rem 0;
-
-    display: flex;
-    flex-direction: column;
-
-    z-index: 5;
-
-    @media only screen and (min-width: 900px) {
-        font-size: 2rem;
-        padding: 3rem;
-        top: 5rem;
-        width: 100%;
-    }
+  }
 }
 
 .navbar__link {
-    text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding: 1rem;
 }
 
 .navbar__item:hover {
-    @media only screen and (min-width: 900px) {
-        background-color: rgb(235, 235, 235);
-        width: 40%;
-        margin: 0 auto;
-    }
+  @media only screen and (min-width: 900px) {
+    background-color: rgb(235, 235, 235);
+    width: 40%;
+    margin: 0 auto;
+  }
 }
 
-
 .toggle-box {
-    color: var(--color-very-dark-blue);
-    background-color: transparent;
-    width: 30px;
-    height: 30px;
+  color: var(--color-very-dark-blue);
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  float: right;
 
-    @media only screen and (min-width: 900px) {
-        width: 40px;
-        height: 40px;
-    }
+  @media only screen and (min-width: 900px) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .menu-bar {
-    position: relative;
-    width: 100%;
-    height: 3px;
-    background-color: var(--color-very-dark-blue);
+  position: relative;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-very-dark-blue);
 
-    transition: transform 200ms ease;
+  transition: transform 200ms ease;
 
-    @media only screen and (min-width: 900px) {
-        height: 4px;
-    }
+  @media only screen and (min-width: 900px) {
+    height: 4px;
+  }
 }
 
 .menu-bar::before,
 .menu-bar::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    background-color: inherit;
-    width: inherit;
-    height: inherit;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
 
-    transition: top 200ms ease 0.12s, transform 200ms ease;
+  transition: top 200ms ease 0.12s, transform 200ms ease;
 }
 
 .menu-bar::before {
-    top: -6px;
+  top: -6px;
 
-    @media only screen and (min-width: 900px){
-        top: -8px;
-    }
+  @media only screen and (min-width: 900px) {
+    top: -8px;
+  }
 }
 
 .menu-bar::after {
-    top: 6px;
+  top: 6px;
 
-    @media only screen and (min-width: 900px) {
-        top: 8px;
-    }
+  @media only screen and (min-width: 900px) {
+    top: 8px;
+  }
 }
 
 .toggle-box.open .menu-bar {
-    transform: rotate(45deg);
-    transition: transform 200ms 0.12s ease;
-}
-  
-.toggle-box.open .menu-bar::before {
-    top: 0;
-    transition: top 200ms ease;
-}
-  
-.toggle-box.open .menu-bar::after {
-    top: 0;
-    transform: rotate(-90deg);
-    transition: top 200ms ease, transform 200ms ease 0.12s;
+  transform: rotate(45deg);
+  transition: transform 200ms 0.12s ease;
 }
 
+.toggle-box.open .menu-bar::before {
+  top: 0;
+  transition: top 200ms ease;
+}
+
+.toggle-box.open .menu-bar::after {
+  top: 0;
+  transform: rotate(-90deg);
+  transition: top 200ms ease, transform 200ms ease 0.12s;
+}
