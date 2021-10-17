@@ -4,8 +4,6 @@
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
 }
 
 .location__text {
@@ -32,8 +30,13 @@
   font-size: 1rem;
 }
 
+.location__map-wrap {
+  max-width: 80%;
+}
+
 .location__map {
-  width: 100%;
+  // max-width: 15rem;
+  // max-height: 10rem;
   margin-top: 3rem;
 
   @media only screen and (min-width: 700px) {
