@@ -63,16 +63,26 @@ const original = document.querySelector(".gallery__modal-full-img");
 thumbs.forEach((thumbs) => {
   thumbs.addEventListener("click", () => {
     galleryModal.classList.add("open");
-    original.classList.add("open");
+    original.classList.add("open", "active");
     const originalSrc = thumbs.getAttribute("data-original");
     original.src = `/assets/full/${originalSrc}.jpg`;
+
+    document.body.style.overflow = "hidden";
   });
 });
 
 galleryModal.addEventListener("click", (e) => {
-  console.log(`${e.target} was clicked`);
-  if (e.target.classList.contains("gallery__modal")) {
+  // console.log(`${e.target} was clicked`);
+  if (e.target.classList.contains("active")) {
     galleryModal.classList.remove("open");
-    original.classList.remove("open");
+    original.classList.remove("open", "active");
+    original.src = "";
   }
+  document.body.style.overflow = "auto";
 });
+
+// if (galleryModal.classList.contains("open")) {
+//   document.body.style.overflow = "hidden";
+// } else {
+//   document.body.style.overflow = "auto";
+// }
