@@ -455,14 +455,13 @@ blockquote {
       padding: 3rem; } }
 
 .services__card--title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin: 2rem 0; }
   @media only screen and (min-width: 900px) {
     .services__card--title {
-      margin: 0;
-      font-size: 1.5rem; } }
+      font-size: 1.75rem; } }
 
 .services__card--info,
 .services__card--prices {
@@ -682,8 +681,6 @@ input:focus {
   max-width: 80%; }
 
 .location__map {
-  max-width: 15rem;
-  max-height: 10rem;
   margin-top: 3rem; }
   @media only screen and (min-width: 700px) {
     .location__map {

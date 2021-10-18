@@ -78,14 +78,13 @@
 }
 
 .services__card--title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   margin: 2rem 0;
 
   @media only screen and (min-width: 900px) {
-    margin: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }
 
