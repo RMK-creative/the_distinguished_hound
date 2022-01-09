@@ -5,13 +5,17 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-position: 0% 50%;
+  background-position: 8% 50%;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
 
   padding: 1rem;
+
+  @media only screen and (min-width: 800px) {
+    background-position: 0% 50%;
+  }
 
   @media only screen and (min-width: 1200px) {
     padding: 5rem;
