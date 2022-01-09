@@ -64,7 +64,7 @@
 .toggle-box {
   color: var(--color-very-dark-blue);
   background-color: transparent;
-  width: 30px;
+  width: 40px;
   height: 30px;
 
   display: flex;
@@ -75,7 +75,7 @@
   border: none;
 
   @media only screen and (min-width: 900px) {
-    width: 40px;
+    width: 50px;
     height: 40px;
   }
 }
