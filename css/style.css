@@ -231,7 +231,8 @@ blockquote {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  float: right; }
+  float: right;
+  border: none; }
   @media only screen and (min-width: 900px) {
     .toggle-box {
       width: 40px;
@@ -359,12 +360,14 @@ blockquote {
   margin: 3rem 1rem;
   background-image: url(/assets/paws.png);
   background-repeat: no-repeat;
-  background-size: 2rem;
-  background-position: top 1vh right 1vw; }
+  background-size: 1.5rem;
+  background-position: top 2vh right 3vw; }
   @media only screen and (min-width: 800px) {
     .testimonial__card {
       max-width: 22rem;
-      margin: 5rem 1rem; } }
+      margin: 5rem 1rem;
+      background-size: 2rem;
+      background-position: top 1vh right 1vw; } }
 
 .testimonial__img {
   width: 5rem;
