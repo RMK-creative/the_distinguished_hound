@@ -290,11 +290,14 @@ blockquote {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-position: 0% 50%;
+  background-position: 8% 50%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 1rem; }
+  @media only screen and (min-width: 800px) {
+    .hero {
+      background-position: 0% 50%; } }
   @media only screen and (min-width: 1200px) {
     .hero {
       padding: 5rem;
@@ -443,7 +446,7 @@ blockquote {
       font-size: 1.5rem; } }
 
 .services__sub-heading {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 0; }
   @media only screen and (min-width: 900px) {
     .services__sub-heading {
@@ -451,13 +454,12 @@ blockquote {
       max-width: 40ch; } }
 
 .services__terms {
-  margin-top: 3rem;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 300; }
   @media only screen and (min-width: 900px) {
     .services__terms {
       padding: 0 13rem;
-      font-size: 1.5rem; } }
+      font-size: 1.2rem; } }
 
 .services__card {
   display: flex;
@@ -475,18 +477,19 @@ blockquote {
       padding: 3rem; } }
 
 .services__card--title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin: 2rem 0; }
+  margin: 1rem 0; }
   @media only screen and (min-width: 900px) {
     .services__card--title {
-      font-size: 1.75rem; } }
+      font-size: 1.75rem;
+      margin: 2rem 0; } }
 
 .services__card--info,
 .services__card--prices {
   font-weight: 300;
-  font-size: 1rem; }
+  font-size: 0.875rem; }
   @media only screen and (min-width: 900px) {
     .services__card--info,
     .services__card--prices {
@@ -505,7 +508,7 @@ blockquote {
   font-weight: 300;
   display: flex;
   flex-direction: column;
-  margin: 0; }
+  margin: 0 0 1rem; }
   @media only screen and (min-width: 900px) {
     .services__card--sizes__container {
       flex-direction: row; } }
@@ -516,12 +519,16 @@ blockquote {
   letter-spacing: 0.1rem;
   margin: 3rem 0 1rem;
   text-transform: uppercase; }
+  @media only screen and (min-width: 900px) {
+    .services__card--sizes__title {
+      font-size: 1rem; } }
 
 .services__card--sizes {
   font-size: 1rem; }
   @media only screen and (min-width: 900px) {
     .services__card--sizes {
-      margin: 0 1rem; } }
+      margin: 0 1rem;
+      font-size: 1.2rem; } }
 
 .card__icon {
   margin-top: 1rem;
@@ -551,7 +558,6 @@ blockquote {
   max-width: 130px;
   max-height: 145px;
   margin: 0.5rem;
-  cursor: pointer;
   overflow: hidden; }
   @media only screen and (min-width: 500px) {
     .img__container {
@@ -654,7 +660,10 @@ input {
   transition: all 0.3s;
   border-bottom: 2px solid #bebed2;
   margin-bottom: 1rem;
-  font-size: 1rem; }
+  font-size: 0.875rem; }
+  @media only screen and (min-width: 700px) {
+    input {
+      font-size: 1rem; } }
 
 input:focus {
   border-bottom: 2px solid #78788c; }
