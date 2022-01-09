@@ -524,9 +524,7 @@ blockquote {
 
 .gallery-set {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  max-height: 35rem;
-  overflow-y: scroll; }
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
 
 .img__container {
   display: inline-flex;

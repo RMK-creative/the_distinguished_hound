@@ -30,56 +30,56 @@ modal.addEventListener(
 // form validation
 
 // const errorMsg = document.querySelector(".contact__form-error");
-const input = document.querySelector(".input-email");
-const submit = document.querySelector(".form__btn");
+// const input = document.querySelector(".input-email");
+// const submit = document.querySelector(".form__btn");
 
-const validateForm = (e) => {
-  e.preventDefault();
-  const emailRegExp =
-    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-  errorMsg.classList.remove("active");
+// const validateForm = (e) => {
+//   e.preventDefault();
+//   const emailRegExp =
+//     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+//   errorMsg.classList.remove("active");
 
-  // if (!emailRegExp.test(input.value)) {
-  //   errorMsg.classList.add("active");
-  // } else {
-  //   input.value = "";
-  // }
-};
+// if (!emailRegExp.test(input.value)) {
+//   errorMsg.classList.add("active");
+// } else {
+//   input.value = "";
+// }
+//};
 
-function clearInput() {
-  input.value = "";
-  errorMsg.classList.remove("active");
-}
+// function clearInput() {
+//   input.value = "";
+//   errorMsg.classList.remove("active");
+// }
 
-input.addEventListener("click", clearInput);
-submit.addEventListener("click", validateForm);
+// input.addEventListener("click", clearInput);
+// submit.addEventListener("click", validateForm);
 
 // Gallery
 
-const galleryModal = document.querySelector(".gallery__modal");
-const thumbs = document.querySelectorAll(".gallery-set img");
-const original = document.querySelector(".gallery__modal-full-img");
+// const galleryModal = document.querySelector(".gallery__modal");
+// const thumbs = document.querySelectorAll(".gallery-set img");
+// const original = document.querySelector(".gallery__modal-full-img");
 
-thumbs.forEach((thumbs) => {
-  thumbs.addEventListener("click", () => {
-    galleryModal.classList.add("open");
-    original.classList.add("open", "active");
-    const originalSrc = thumbs.getAttribute("data-original");
-    original.src = `/assets/full/${originalSrc}.jpg`;
+// thumbs.forEach((thumbs) => {
+//   thumbs.addEventListener("click", () => {
+//     galleryModal.classList.add("open");
+//     original.classList.add("open", "active");
+//     const originalSrc = thumbs.getAttribute("data-original");
+//     original.src = `/assets/full/${originalSrc}.jpg`;
 
-    document.body.style.overflow = "hidden";
-  });
-});
+//     document.body.style.overflow = "hidden";
+//   });
+// });
 
-galleryModal.addEventListener("click", (e) => {
-  // console.log(`${e.target} was clicked`);
-  if (e.target.classList.contains("active")) {
-    galleryModal.classList.remove("open");
-    original.classList.remove("open", "active");
-    original.src = "";
-  }
-  document.body.style.overflow = "auto";
-});
+// galleryModal.addEventListener("click", (e) => {
+//   // console.log(`${e.target} was clicked`);
+//   if (e.target.classList.contains("active")) {
+//     galleryModal.classList.remove("open");
+//     original.classList.remove("open", "active");
+//     original.src = "";
+//   }
+//   document.body.style.overflow = "auto";
+// });
 
 // if (galleryModal.classList.contains("open")) {
 //   document.body.style.overflow = "hidden";

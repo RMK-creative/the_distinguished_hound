@@ -14,13 +14,9 @@
 .gallery-set {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  max-height: 35rem;
-  overflow-y: scroll;
+  // max-height: 35rem;
+  // overflow-y: scroll;
 }
-
-// .gallery__img {
-//   transform: scale(1.1);
-// }
 
 .img__container {
   display: inline-flex;
