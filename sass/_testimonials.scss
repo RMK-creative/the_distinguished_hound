@@ -23,12 +23,14 @@
 
   background-image: url(/assets/paws.png);
   background-repeat: no-repeat;
-  background-size: 2rem;
-  background-position: top 1vh right 1vw;
+  background-size: 1.5rem;
+  background-position: top 2vh right 3vw;
 
   @media only screen and (min-width: 800px) {
     max-width: 22rem;
     margin: 5rem 1rem;
+    background-size: 2rem;
+    background-position: top 1vh right 1vw;
   }
 }
 
