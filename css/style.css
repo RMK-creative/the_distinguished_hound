@@ -225,7 +225,7 @@ blockquote {
 .toggle-box {
   color: var(--color-very-dark-blue);
   background-color: transparent;
-  width: 30px;
+  width: 40px;
   height: 30px;
   display: flex;
   justify-content: center;
