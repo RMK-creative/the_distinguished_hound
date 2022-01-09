@@ -72,11 +72,12 @@ select {
     scroll-behavior: auto !important; } }
 
 :root {
-  --color-white: #FFFFFF;
+  --color-white: #ffffff;
   --color-very-dark-blue: #202040;
   --color-box-shadow: 3px 4px 15px rgb(228, 228, 228);
-  --font-heading: 'Flamenco', cursive;
-  --font-copy: 'Josefin Sans', sans-serif; }
+  --color-attribution-grey: #c3c3c3;
+  --font-heading: "Flamenco", cursive;
+  --font-copy: "Josefin Sans", sans-serif; }
 
 body {
   background-color: var(--color-white);
@@ -767,3 +768,7 @@ footer {
   font-size: 0.875rem;
   font-family: var(--font-copy);
   color: var(--color-very-dark-blue); }
+
+.attribution {
+  font-size: 0.5rem;
+  color: var(--color-attribution-grey); }
