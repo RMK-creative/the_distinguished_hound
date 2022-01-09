@@ -562,10 +562,14 @@ blockquote {
   max-height: 145px;
   margin: 0.5rem;
   overflow: hidden; }
-  @media only screen and (min-width: 500px) {
+  @media only screen and (min-width: 600px) {
     .img__container {
       max-width: 180px;
       max-height: 200px; } }
+  @media only screen and (min-width: 800px) {
+    .img__container {
+      max-width: 200px;
+      max-height: 225px; } }
 
 .gallery__modal-full-img {
   position: absolute;
