@@ -347,29 +347,40 @@ blockquote {
   font-family: var(--font-copy);
   border-radius: 0.5rem;
   box-shadow: var(--color-box-shadow);
-  max-width: 22rem;
+  max-width: 19rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 2rem;
-  margin: 5rem 1rem;
+  margin: 3rem 1rem;
   background-image: url(/assets/paws.png);
   background-repeat: no-repeat;
   background-size: 2rem;
   background-position: top 1vh right 1vw; }
+  @media only screen and (min-width: 800px) {
+    .testimonial__card {
+      max-width: 22rem;
+      margin: 5rem 1rem; } }
 
 .testimonial__img {
-  width: 7.25rem;
-  border-radius: 50%;
-  margin-top: -5.2rem; }
+  width: 5rem;
+  margin-top: -4.5rem;
+  border-radius: 50%; }
+  @media only screen and (min-width: 700px) {
+    .testimonial__img {
+      width: 7.25rem;
+      margin-top: -5.2rem; } }
 
 .testimonial__dog-name {
   font-family: var(--font-copy);
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  margin: 2rem 0 0; }
+  margin: 1rem 0 0; }
+  @media only screen and (min-width: 700px) {
+    .testimonial__dog-name {
+      margin: 2rem 0 0; } }
 
 .testimonial__dog-breed {
   margin-top: 0.2rem;
@@ -381,11 +392,19 @@ blockquote {
 
 .testimonial__quote {
   font-weight: 300;
+  font-size: 14px;
   margin-bottom: 1rem; }
+  @media only screen and (min-width: 700px) {
+    .testimonial__quote {
+      font-size: 16px; } }
 
 .testimonial__owner {
   font-weight: 300;
+  font-size: 14px;
   justify-self: flex-end; }
+  @media only screen and (min-width: 700px) {
+    .testimonial__owner {
+      font-size: 16px; } }
 
 @media only screen and (min-width: 900px) {
   .testimonial__img {
