@@ -280,22 +280,20 @@
                                  Contact form
                             </legend>
                             <p>
-                                <label for="name" >your name
-                                    <span class="contact__required field">(required)<input type="text" id="name" name="name" required></input></span>
+                                <label for="name" >your name*<input type="text" id="name" name="name" required></input>
                                 </label>
                             </p>
                             <p>
-                                <label for="email" >your email
-                                    <span class="contact__required field">(required)<input type="email" id="email" class="input-email" name="email" required></input></span>
+                                <label for="email" >your email*
+                                    <input type="email" id="email" class="input-email" name="email" required></input>
                                 </label>
                             </p>
                             <p>
-                                <label class="field" for="phone-number" >your phone <span class="contact__required field">(required)<input type="number" id="phone-number"  name="phone-number" required></input></span>
+                                <label class="field" for="phone-number" >your phone*<input type="number" id="phone-number"  name="phone-number" required></input>
                                 </label>
                             </p>
                             <p>
-                                <label for="message">your message to us 
-                                    <span class="contact__required field">(required)<textarea name="message" class="message-input" id="message" required></textarea></span>
+                                <label for="message">message*<textarea name="message" class="message-input" id="message" required></textarea>
                                 </label>
                             </p>
                             <p>
@@ -303,6 +301,7 @@
                                     send
                                 </button>
                             </p>
+                            <p class="form-required">* required field</p>
                     </form>
                 </div>
             </section>

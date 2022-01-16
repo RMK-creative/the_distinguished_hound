@@ -652,9 +652,9 @@ blockquote {
     .contact__form {
       margin-left: 4rem; } }
 
-.contact__required {
-  font-size: 0.7rem;
-  text-transform: lowercase; }
+.form-required {
+  text-transform: lowercase;
+  margin-top: 2.5rem; }
 
 fieldset {
   border: none; }
