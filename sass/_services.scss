@@ -97,6 +97,7 @@
 
 .services__card--prices {
   text-transform: lowercase;
+  gap: 1rem;
 
   @media only screen and (min-width: 900px) {
     display: flex;

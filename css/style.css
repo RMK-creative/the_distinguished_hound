@@ -503,7 +503,8 @@ blockquote {
       font-size: 1.25rem; } }
 
 .services__card--prices {
-  text-transform: lowercase; }
+  text-transform: lowercase;
+  gap: 1rem; }
   @media only screen and (min-width: 900px) {
     .services__card--prices {
       display: flex;
